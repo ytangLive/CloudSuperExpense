@@ -1,0 +1,3 @@
+rootProject.name = 'CloudSuperExpense'
+
+include ':app'

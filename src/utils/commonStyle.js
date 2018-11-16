@@ -27,9 +27,9 @@ export default commonStyle = {
   clear: 'transparent',
 
   /** 主题色 **/
-  themeColor: '#e74c3c',
+  themeColor: '#37363B',
   // 默认灰色字体颜色
-  textGrayColor: '#989898',
+  textGrayColor: '#7B7B7B',
   // 默认黑色字体颜色
   textBlackColor: '#262626',
   // 默认背景颜色
@@ -41,16 +41,18 @@ export default commonStyle = {
   // borderColor
   borderColor: '#808080',
   // 导航title 颜色
-  navTitleColor: '#262626',
+  navTitleColor: '#FAFAFD',
   // 导航左item title color
   navLeftTitleColor: '#333',
   // 导航右item title color
   navRightTitleColor: '#333',
-  navThemeColor: '#FEFEFE',
+  navThemeColor: '#37363B',
   // 导航默认底部分割线颜色
-  navBottomColor: '#E6E6E6',
+  navBottomColor: '#37363B',
   iconGray: '#989898',
   iconBlack: '#262626',
+  // 底部tools按钮颜色
+  tabBarBottomBtnColor: '#61A93F',
 
   /** height **/
   // 导航栏的高度

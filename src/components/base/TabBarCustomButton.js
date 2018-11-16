@@ -15,7 +15,7 @@ export default  class TabBarCustomButton extends Component {
     render() {
         return (
             <TouchableOpacity style={styles.container}>
-                <Icon name={'YIcon|se_addition_fill'} size={ButtonWidth} color={'#F9783F'}/>
+                <Icon name={'YIcon|se_addition_fill'} size={ButtonWidth} color={commonStyle.tabBarBottomBtnColor}/>
             </TouchableOpacity>
         )
     }

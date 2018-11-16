@@ -27,11 +27,11 @@ export default class MainPage extends Component {
               <TabNavigator tabBarStyle={styles.tabBarStyle}>
                  <TabNavigator.Item 
                    selected={this.state.selectedTab === 'Home'}
-                   title="电影"
+                   title="账单"
                    titleStyle={styles.tabText}
                    selectedTitleStyle={styles.selectedTabText}
-                   renderIcon={() => <Icon name={'YIcon|se_home'} size={20} color={commonStyle.textGrayColor}/>}
-                   renderSelectedIcon={() => <Icon name={'YIcon|se_home'} size={20} color={commonStyle.black}/>}
+                   renderIcon={() => <Icon name={'YIcon|se_activity'} size={28} color={commonStyle.textGrayColor}/>}
+                   renderSelectedIcon={() => <Icon name={'YIcon|se_activity'} size={28} color={commonStyle.tabBarBottomBtnColor}/>}
                    onPress={() => this.setState({selectedTab : 'Home'})}
                  >
                  <HomePage/>
@@ -40,13 +40,13 @@ export default class MainPage extends Component {
                  <TabNavigator.Item />
 
                  <TabNavigator.Item 
-                   selected={this.state.selectedTab === 'Home1'}
-                   title="电影"
+                   selected={this.state.selectedTab === 'Me'}
+                   title="我的"
                    titleStyle={styles.tabText}
                    selectedTitleStyle={styles.selectedTabText}
-                   renderIcon={() => <Icon name={'YIcon|se_home'} size={20} color={commonStyle.textGrayColor}/>}
-                   renderSelectedIcon={() => <Icon name={'YIcon|se_home'} size={20} color={commonStyle.black}/>}
-                   onPress={() => this.setState({selectedTab : 'Home1'})}
+                   renderIcon={() => <Icon name={'YIcon|se_people'} size={30} color={commonStyle.textGrayColor}/>}
+                   renderSelectedIcon={() => <Icon name={'YIcon|se_people_fill'} size={30} color={commonStyle.tabBarBottomBtnColor}/>}
+                   onPress={() => this.setState({selectedTab : 'Me'})}
                  >
                  <HomePage/>
                  </TabNavigator.Item>
@@ -67,11 +67,13 @@ const styles = StyleSheet.create({
     tabText: {
         fontSize: 11,
         color: commonStyle.textGrayColor,
-        marginBottom: 5
+        marginTop: 0,
+        marginBottom: 3
     },
     selectedTabText: {
         fontSize: 11,
-        color: commonStyle.black,
-        marginBottom: 5
+        color: commonStyle.tabBarBottomBtnColor,
+        marginTop: 0,
+        marginBottom: 3
     }
 })
